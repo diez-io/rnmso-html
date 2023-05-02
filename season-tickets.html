@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Абонементы</title>
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body class="bg-green">
+<header class="page-header">
+  <div class="container">
+    <div class="d-flex page-header__inner">
+      <div class="header__logo header__logo_mob">
+        <a href="#"><img src="images/dest/logo-b.svg" alt=""></a>
+      </div>
+      <div class="d-flex justify-start">
+        <div class="header__logo header__logo_page">
+          <a href="#"><img src="images/dest/logo-small.svg" alt=""></a>
+        </div>
+        <nav class="menu-main menu-main_page">
+          <ul class="ul-nostyle">
+            <li class="menu-main__item menu-main__item_b"><a href="#">оркестр</a></li>
+            <li class="menu-main__item menu-main__item_b selected"><a href="#">афиша</a></li>
+            <li class="menu-main__item menu-main__item_b"><a href="#">конкурс</a></li>
+            <li class="menu-main__item menu-main__item_b"><a href="#">фото и видео</a></li>
+            <li class="menu-main__item menu-main__item_b"><a href="#">информация</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__links header__links_page">
+        <a class="header__links-lang header__links-lang_b link" href="#">Eng</a>
+        <a class="header__links-search header__links-search_b" href="#"><img class="icon-search icon-search_b" src="images/dest/icons/search-icon.svg"></a>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="page-content">
+  <div class="container">
+    <section class="page-title">
+      <h1 class="h1">Абонементы</h1>
+    </section>
+    <section class="page-filter">
+      <div class="page-filter__grid">
+        <div class="switch__container">
+          <div class="switch__toggle-container">
+            <input id="year1"  name="year" type="radio" checked />
+            <label for="year1" class="switch__label switch__label_left">2021/22</label>
+            <input id="year2" name="year" type="radio" />
+            <label for="year2" class="switch__label switch__label_right">2022/23</label>
+            <div class="switch__toggle"></div>
+            <div class="switch__pill"></div>
+          </div>
+        </div>
+      </div>
+      <div class="page-filter__grid d-flex">
+        <div class="select__container">
+          <select>
+            <option>жанр</option>
+            <option value="1">жанр 1</option>
+            <option value="2">жанр 2</option>
+          </select>
+        </div>
+        <div class="select__container">
+          <select>
+            <option>зал</option>
+            <option value="1">зал 1</option>
+            <option value="2">зал 2</option>
+          </select>
+        </div>
+      </div>
+      <div class="page-filter__grid">
+        <div class="toggle__container">
+          <label class="toggle">
+            <input class="toggle__checkbox" type="checkbox">
+            <div class="toggle__switch"></div>
+            <span class="toggle__label">в продаже</span>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-search">
+      <input class="input__search" type="text" placeholder="номер абонемента, фамилия, жанр, ключевое слово">
+    </section>
+
+    <section class="page-abonement">
+      <div class="abonement-section">
+        <div class="abonement-section_separate">
+          <div class="abonement-section__column">
+            <span class="abonement-section__num">108</span>
+          </div>
+          <div class="abonement-section__column abonement-section__title">
+            <h4 class="h4">Ф. Херревеге / М. Минковски / К. Эшенбах</h4>
+            <p>
+              Концертный зал имени П.И. Чайковского<br/>
+              2000—5000₽
+            </p>
+          </div>
+          <div class="abonement-section__column abonement-section__actions">
+            <a href="#" class="btn">купить</a>
+          </div>
+        </div>
+        <div class="abonement-section__items">
+          <div class="abonement-section__item abonement-section_separate">
+            <div class="abonement-section__column">
+               <span class="abonement-section__date">
+                  29 Декабря<br/>
+                  Среда, 19:00
+               </span>
+            </div>
+            <div class="abonement-section__column abonement-section__text">
+              <p>
+                Российский национальный молодёжный симфонический оркестр<br/>
+                Туган Сохиев, дирижёр<br/>
+                Александр Канторов, фортепиано<br/>
+                В программе — Шуман<br/>
+              </p>
+              <picture >
+                <img src="images/dest/content/main/afisha4.png" alt="" />
+              </picture>
+            </div>
+            <div class="abonement-section__column"></div>
+          </div>
+          <div class="abonement-section__item abonement-section_separate">
+            <div class="abonement-section__column">
+              <span class="abonement-section__date">
+                21 Января<br/>
+                Пятница, 19:00
+              </span>
+            </div>
+            <div class="abonement-section__column abonement-section__text">
+              <p>
+              Государственный академический симфонический оркестр России имени Е. Ф. Светланова<br/>
+              Владимир Юровский, дирижёр<br/>
+              Томас Хэмпсон, бас-баритон<br/>
+              В программе — Р. Штраус, Малер, Й. Гайдн<br/>
+              </p>
+            </div>
+            <div class="abonement-section__column"></div>
+          </div>
+        </div>
+      </div>
+      <div class="abonement-section abonement-section_disabled">
+        <div class="abonement-section_separate">
+          <div class="abonement-section__column">
+            <span class="abonement-section__num">108</span>
+          </div>
+          <div class="abonement-section__column abonement-section__title">
+            <h4 class="h4">Ф. Херревеге / М. Минковски / К. Эшенбах</h4>
+            <p>
+              Концертный зал имени П.И. Чайковского<br/>
+              2000—5000₽
+            </p>
+          </div>
+          <div class="abonement-section__column abonement-section__actions">
+            <span>раскуплено</span>
+          </div>
+        </div>
+        <div class="abonement-section__items">
+          <div class="abonement-section__item abonement-section_separate">
+            <div class="abonement-section__column">
+               <span class="abonement-section__date">
+                  29 Декабря<br/>
+                  Среда, 19:00
+               </span>
+            </div>
+            <div class="abonement-section__column abonement-section__text">
+              <p>
+                Российский национальный молодёжный симфонический оркестр<br/>
+                Туган Сохиев, дирижёр<br/>
+                Александр Канторов, фортепиано<br/>
+                В программе — Шуман<br/>
+              </p>
+              <picture >
+                <img src="images/dest/content/main/afisha4.png" alt="" />
+              </picture>
+            </div>
+            <div class="abonement-section__column"></div>
+          </div>
+          <div class="abonement-section__item abonement-section_separate">
+            <div class="abonement-section__column">
+              <span class="abonement-section__date">
+                21 Января<br/>
+                Пятница, 19:00
+              </span>
+            </div>
+            <div class="abonement-section__column abonement-section__text">
+              <p>
+                Государственный академический симфонический оркестр России имени Е. Ф. Светланова<br/>
+                Владимир Юровский, дирижёр<br/>
+                Томас Хэмпсон, бас-баритон<br/>
+                В программе — Р. Штраус, Малер, Й. Гайдн<br/>
+              </p>
+            </div>
+            <div class="abonement-section__column"></div>
+          </div>
+          <div class="abonement-section__item abonement-section_separate">
+            <div class="abonement-section__column">
+               <span class="abonement-section__date">
+                  29 Декабря<br/>
+                  Среда, 19:00
+               </span>
+            </div>
+            <div class="abonement-section__column abonement-section__text">
+              <p>
+                Российский национальный молодёжный симфонический оркестр<br/>
+                Туган Сохиев, дирижёр<br/>
+                Александр Канторов, фортепиано<br/>
+                В программе — Шуман<br/>
+              </p>
+              <picture >
+                <img src="images/dest/content/main/afisha4.png" alt="" />
+              </picture>
+            </div>
+            <div class="abonement-section__column"></div>
+          </div>
+        </div>
+      </div>
+      <div class="abonement-section">
+        <div class="abonement-section_separate">
+          <div class="abonement-section__column">
+            <span class="abonement-section__num">108</span>
+          </div>
+          <div class="abonement-section__column abonement-section__title">
+            <h4 class="h4">Ф. Херревеге / М. Минковски / К. Эшенбах</h4>
+            <p>
+              Концертный зал имени П.И. Чайковского<br/>
+              2000—5000₽
+            </p>
+          </div>
+          <div class="abonement-section__column abonement-section__actions">
+            <a href="#" class="btn">купить</a>
+          </div>
+        </div>
+        <div class="abonement-section__items">
+          <div class="abonement-section__item abonement-section_separate">
+            <div class="abonement-section__column">
+               <span class="abonement-section__date">
+                  29 Декабря<br/>
+                  Среда, 19:00
+               </span>
+            </div>
+            <div class="abonement-section__column abonement-section__text">
+              <p>
+                Российский национальный молодёжный симфонический оркестр<br/>
+                Туган Сохиев, дирижёр<br/>
+                Александр Канторов, фортепиано<br/>
+                В программе — Шуман<br/>
+              </p>
+              <picture >
+                <img src="images/dest/content/main/afisha4.png" alt="" />
+              </picture>
+            </div>
+            <div class="abonement-section__column"></div>
+          </div>
+          <div class="abonement-section__item abonement-section_separate">
+            <div class="abonement-section__column">
+              <span class="abonement-section__date">
+                21 Января<br/>
+                Пятница, 19:00
+              </span>
+            </div>
+            <div class="abonement-section__column abonement-section__text">
+              <p>
+                Государственный академический симфонический оркестр России имени Е. Ф. Светланова<br/>
+                Владимир Юровский, дирижёр<br/>
+                Томас Хэмпсон, бас-баритон<br/>
+                В программе — Р. Штраус, Малер, Й. Гайдн<br/>
+              </p>
+            </div>
+            <div class="abonement-section__column"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+<footer class="footer bg-gray26">
+  <div class="container">
+    <div class="footer-columns">
+      <div class="footer-column">
+        <h2 class="footer__main-title">Российский национальный молодежный симфонический оркестр</h2>
+      </div>
+      <div class="footer-column">
+        <div class="footer-menu__items">
+          <div class="footer-menu__item">
+            <h3 class="footer__title">Окрестр</h3>
+            <ul class="ul-nostyle">
+              <li><a href="#">Состав оркестра</a></li>
+              <li><a href="#">Дирижеры оркестра</a></li>
+              <li><a href="#">Солисты и ведущие сезона</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-column">
+        <div class="footer-menu__items">
+          <div class="footer-menu__item">
+            <h3 class="footer__title">Афиша</h3>
+            <ul class="ul-nostyle">
+              <li><a href="#">Календарь концертов</a></li>
+              <li><a href="#">Архив</a></li>
+            </ul>
+          </div>
+          <div class="footer-menu__item">
+            <h3 class="footer__title">Медиа</h3>
+            <ul class="ul-nostyle">
+              <li><a href="#">Видео</a></li>
+              <li><a href="#">Фото</a></li>
+              <li><a href="#">Онлайн-трансляция</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Пресса</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-column">
+        <div class="footer-contacts">
+          <h3 class="footer__title">Контакты</h3>
+          <p>
+            Концертный зал Филармония–2<br/>
+            Мичуринский проспект,<br/>
+            Олимпийская деревня, 1<br/>
+            Часы работы: 10:00—21:00
+          </p>
+          <p>
+            Общие вопросы<br/>
+            <a class="link" href="mailto:info@rnmso.ru">info@rnmso.ru</a>
+          </p>
+          <p>
+            Пресса<br/>
+            <a class="link" href="mailto:pr@rnmso.ru">pr@rnmso.ru</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom__links">
+        <a href="#"><img src="images/dest/logo-small-w.svg" alt="" /></a>
+        <a href="#"><img src="images/dest/logo-footer-1.svg" alt="" /></a>
+        <a href="#"><img src="images/dest/logo-footer-2.svg" alt="" /></a>
+      </div>
+      <div class="footer-bottom__copyright">
+        ©  Российский национальный молодежный симфонический оркестр
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
